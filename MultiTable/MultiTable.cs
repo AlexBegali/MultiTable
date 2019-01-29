@@ -45,27 +45,27 @@ namespace MultiTable
         
         protected void InitializeArray()
         {
-            Values = new TValue[FirstKeyValues.Length * SecondKeyValues.Length];
+            //Values = new TValue[FirstKeyValues.Length * SecondKeyValues.Length];
 
-            int index = -1;
+            //int index = -1;
 
-            foreach (TFirstKey key in FirstKeyValues)
-            {
-                //AvailableFirstKeysEnumerables.Add(key, new List<FirstKeyLine>());
+            //foreach (TFirstKey key in FirstKeyValues)
+            //{
+            //    //AvailableFirstKeysEnumerables.Add(key, new List<FirstKeyLine>());
 
-                index = Array.FindIndex(FirstKeyValues, x => x.Equals(key));
-                FirstKeyToIndex.Add(key, index);
-                IndexToFirstKey.Add(index, key);
-            }
+            //    index = Array.FindIndex(FirstKeyValues, x => x.Equals(key));
+            //    FirstKeyToIndex.Add(key, index);
+            //    IndexToFirstKey.Add(index, key);
+            //}
 
-            foreach (TSecondKey key in SecondKeyValues)
-            {
-                //AvailableSecondKeysEnumerables.Add(key, new List<SecondKeyLine>());
+            //foreach (TSecondKey key in SecondKeyValues)
+            //{
+            //    //AvailableSecondKeysEnumerables.Add(key, new List<SecondKeyLine>());
 
-                index = Array.FindIndex(SecondKeyValues, x => x.Equals(key));
-                SecondKeyToIndex.Add(key, index);
-                IndexToSecondKey.Add(index, key);
-            }
+            //    index = Array.FindIndex(SecondKeyValues, x => x.Equals(key));
+            //    SecondKeyToIndex.Add(key, index);
+            //    IndexToSecondKey.Add(index, key);
+            //}
         }
     }
 
